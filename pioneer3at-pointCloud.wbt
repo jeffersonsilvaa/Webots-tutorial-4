@@ -1,0 +1,463 @@
+#VRML_SIM R2020a utf8
+WorldInfo {
+  info [
+    "Pioneer 3AT robot (Adept MobileRobots)."
+    "This all terrain four wheels drive robot is  equipped with a Sick LMS 291 lidar."
+    "It is programmed to perform a simple obstacle avoidance behavior based on the sensor data measured by the lidar."
+  ]
+  title "Pioneer 3AT"
+  lineScale 0.5
+}
+Pedestrian {
+  translation -2.86 1.27 11.97
+}
+Viewpoint {
+  orientation -0.13747799752796974 -0.9561266868858461 -0.25869201537812264 2.265379618258503
+  position -101.61773211580015 63.748569994487795 -73.20287530864938
+  follow "Pioneer 3-AT"
+  followSmoothness 0
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  translation -0.44 -0.01 2.22
+  floorSize 100 100
+  floorTileSize 3 3
+  floorAppearance SandyGround {
+  }
+  wallThickness 0.2
+  wallHeight 0.8
+  wallAppearance PBRAppearance {
+    baseColorMap ImageTexture {
+      url [
+        "textures/gray_brick_wall.jpg"
+      ]
+    }
+    roughness 1
+    metalness 0
+    textureTransform TextureTransform {
+      scale 56 28
+    }
+  }
+}
+StraightRoadSegment {
+  translation 0 0 32
+  rotation 0 1 0 1.5707996938995747
+}
+StraightRoadSegment {
+  translation 40 0 22
+  rotation 0 1 0 3.141592653589793
+  name "road(16)"
+}
+StraightRoadSegment {
+  translation 40 0 12
+  rotation 0 1 0 3.141592653589793
+  name "road(18)"
+}
+StraightRoadSegment {
+  translation 40 0 2
+  rotation 0 1 0 3.141592653589793
+  name "road(19)"
+}
+StraightRoadSegment {
+  translation -40 0 6
+  rotation 0 1 0 3.141592653589793
+  name "road(22)"
+}
+StraightRoadSegment {
+  translation 40 0 -4
+  rotation 0 1 0 3.141592653589793
+  name "road(20)"
+}
+StraightRoadSegment {
+  translation -40 0 -4
+  rotation 0 1 0 3.141592653589793
+  name "road(21)"
+}
+StraightRoadSegment {
+  translation -40 0 22
+  rotation 0 1 0 3.141592653589793
+  name "road(17)"
+}
+StraightRoadSegment {
+  translation 20 0 -24
+  rotation 0 1 0 1.5707996938995747
+  name "road(9)"
+}
+StraightRoadSegment {
+  translation 10 0 32
+  rotation 0 1 0 1.5707996938995747
+  name "road(1)"
+}
+StraightRoadSegment {
+  translation 10 0 -24
+  rotation 0 1 0 1.5707996938995747
+  name "road(10)"
+}
+StraightRoadSegment {
+  translation 20 0 32
+  rotation 0 1 0 1.5707996938995747
+  name "road(2)"
+}
+StraightRoadSegment {
+  translation 0 0 -24
+  rotation 0 1 0 1.5707996938995747
+  name "road(11)"
+}
+StraightRoadSegment {
+  translation -10 0 32
+  rotation 0 1 0 1.5707996938995747
+  name "road(3)"
+}
+StraightRoadSegment {
+  translation -10 0 -24
+  rotation 0 1 0 1.5707996938995747
+  name "road(12)"
+}
+StraightRoadSegment {
+  translation -20 0 32
+  rotation 0 1 0 1.5707996938995747
+  name "road(5)"
+}
+StraightRoadSegment {
+  translation -20 0 -24
+  rotation 0 1 0 1.5707996938995747
+  name "road(13)"
+}
+StraightRoadSegment {
+  translation -30 0 32
+  rotation 0 1 0 1.5707996938995747
+  name "road(6)"
+}
+StraightRoadSegment {
+  translation -30 0 -24
+  rotation 0 1 0 1.5707996938995747
+  name "road(8)"
+}
+StraightRoadSegment {
+  translation -40 0 4
+  name "road(23)"
+}
+MotorbikeSimple {
+  translation 41.25 0.25 15.51
+  name "vehicle(10)"
+}
+CurvedRoadSegment {
+  translation 30 0 22
+  name "road(4)"
+}
+CurvedRoadSegment {
+  translation 30 0 -14
+  rotation 0 1 0 1.5707996938995747
+  name "road(14)"
+}
+CurvedRoadSegment {
+  translation -30 0 22
+  rotation 0 1 0 -1.5707996938995747
+  name "road(7)"
+}
+CurvedRoadSegment {
+  translation -30 0 -14
+  rotation 0 1 0 -3.141592653589793
+  name "road(15)"
+}
+ScooterSimple {
+  translation 39.97 0.23 10.09
+  name "vehicle(9)"
+}
+PalmTree {
+  translation -38.53 0 45.28
+  rotation 0 1 0 -0.523595307179586
+  name "palm tree(2)"
+}
+ModernSuburbanHouse {
+  translation -9.79 0 44.16
+}
+ToyotaPrius {
+  translation 33.33 0.4 -45.07
+  name "vehicle(4)"
+}
+ToyotaPrius {
+  translation -1.84 0.4 2.77
+  rotation 0 1 0 1.5708
+  name "vehicle(15)"
+}
+ToyotaPrius {
+  translation 46.68 0.4 -0.8
+  name "vehicle(8)"
+}
+TeslaModel3 {
+  translation 28.64 0.4 -44.91
+  name "vehicle(3)"
+}
+TeslaModel3 {
+  translation 7.18 0.4 2.45
+  rotation 0 1 0 -1.5707953071795862
+  name "vehicle(13)"
+}
+TeslaModel3 {
+  translation 46.97 0.4 -16.92
+  name "vehicle(6)"
+}
+RangeRoverSportSVR {
+  translation 23.99 0.4 -44.83
+  name "vehicle(2)"
+}
+RangeRoverSportSVR {
+  translation -1.79999 0.4 10.06
+  rotation 0 1 0 1.5708
+  name "vehicle(14)"
+}
+RangeRoverSportSVR {
+  translation 46.69 0.4 -7.37
+  name "vehicle(7)"
+}
+LincolnMKZ {
+  translation 18.79 0.4 -44.75
+  name "vehicle(1)"
+}
+LincolnMKZ {
+  translation 7.3 0.4 6.04
+  rotation 0 1 0 -1.5707953071795862
+  name "vehicle(12)"
+}
+BmwX5 {
+  translation 14.28 0.4 -44.61
+}
+BmwX5 {
+  translation 7.23 0.4 9.97
+  rotation 0 1 0 -1.5707953071795862
+  name "vehicle(11)"
+}
+BmwX5 {
+  translation 46.81 0.4 -24.07
+  name "vehicle(5)"
+}
+ControlledStreetLight {
+  translation 47.6199 0 37.89
+  rotation 0 1 0 1.5708
+  name "street light(11)"
+}
+ControlledStreetLight {
+  translation 47.6199 0 21.85
+  rotation 0 1 0 1.5708
+  name "street light(10)"
+}
+LargeResidentialTower {
+  translation 0 0 -40.07
+}
+LargeResidentialTower {
+  translation -16.03 0 6.55
+  name "residential tower(1)"
+}
+LargeResidentialTower {
+  translation 23.6 0 6.55
+  name "residential tower(2)"
+}
+ControlledStreetLight {
+  translation 2.36 0 0.450005
+  rotation 0 1 0 1.5708
+}
+ControlledStreetLight {
+  translation 1.98 0 11.54
+  rotation 0 1 0 1.5708
+  name "street light(13)"
+}
+ControlledStreetLight {
+  translation 46.7399 0 -28.19
+  rotation 0 1 0 1.5708
+  name "street light(2)"
+}
+ControlledStreetLight {
+  translation 47.1199 0 -10.92
+  rotation 0 1 0 1.5708
+  name "street light(8)"
+}
+ControlledStreetLight {
+  translation 47.6199 0 5.72
+  rotation 0 1 0 1.5708
+  name "street light(9)"
+}
+ControlledStreetLight {
+  translation 3.19 5.21691e-08 0.48
+  rotation 9.5898e-09 1 9.58979e-09 -1.5707953071795862
+  name "street light(1)"
+}
+ControlledStreetLight {
+  translation 2.87 6.78968e-08 11.56
+  rotation 9.5898e-09 1 9.58979e-09 -1.5707953071795862
+  name "street light(12)"
+}
+ControlledStreetLight {
+  translation -47.77 1.03917e-06 -32.16
+  rotation 9.5898e-09 1 9.58979e-09 -1.5707953071795862
+  name "street light(3)"
+}
+ControlledStreetLight {
+  translation -47.27 1.03917e-06 -13.72
+  rotation 9.5898e-09 1 9.58979e-09 -1.5707953071795862
+  name "street light(4)"
+}
+ControlledStreetLight {
+  translation -47.27 1.03917e-06 2.8
+  rotation 9.5898e-09 1 9.58979e-09 -1.5707953071795862
+  name "street light(5)"
+}
+ControlledStreetLight {
+  translation -47.27 1.03917e-06 21.14
+  rotation 9.5898e-09 1 9.58979e-09 -1.5707953071795862
+  name "street light(6)"
+}
+ControlledStreetLight {
+  translation -47.27 1.03917e-06 37.89
+  rotation 9.5898e-09 1 9.58979e-09 -1.5707953071795862
+  name "street light(7)"
+}
+Sassafras {
+  translation 47.3636 0 46.1524
+  rotation 0 -1 0 2.87979
+  name "sassafras tree(4)"
+}
+Sassafras {
+  translation 39.8336 0 46.1524
+  rotation 0 1 0 2.618
+  name "sassafras tree(10)"
+}
+Sassafras {
+  translation 32.0336 0 46.1524
+  rotation 0 1 0 2.0944
+  name "sassafras tree(11)"
+}
+Sassafras {
+  translation 23.7536 0 46.1524
+  rotation 0 1 0 1.5708
+  name "sassafras tree(12)"
+}
+Sassafras {
+  translation 14.2436 0 46.1525
+  rotation 0 -1 0 1.83259
+  name "sassafras tree(13)"
+}
+Sassafras {
+  translation 3.9236 0 46.1525
+  rotation 0 -1 0 2.35619
+  name "sassafras tree(14)"
+}
+Pedestrian {
+  translation 2.88 1.27 37.94
+  name "pedestrian(3)"
+}
+Pedestrian {
+  translation 5.28209 1.27 41.1635
+  rotation 0 1 0 -2.3561953071795863
+  name "pedestrian(2)"
+}
+Pedestrian {
+  translation 7.36326 1.27 0.902171
+  rotation 0 1 0 -0.785395307179586
+  name "pedestrian(1)"
+}
+Tree {
+  name "tree(2)"
+}
+Pine {
+  translation -43.69 0 45.19
+}
+PalmTree {
+  translation -26.89 0 45.28
+  rotation 0 1 0 0.261799
+}
+PalmTree {
+  translation -21.22 0 45.28
+  rotation 0 1 0 -0.785395307179586
+  name "palm tree(3)"
+}
+PalmTree {
+  translation -32.58 0 45.28
+  rotation 0 1 0 0.785398
+  name "palm tree(1)"
+}
+Oak {
+  translation 10.12 0 0.32
+}
+BigSassafras {
+  translation -42.35 0 -40.15
+}
+BigSassafras {
+  translation -34.45 0 -40.15
+  name "sassafras tree(7)"
+}
+BigSassafras {
+  translation -26.33 0 -40.15
+  name "sassafras tree(8)"
+}
+BigSassafras {
+  translation -17.91 0 -40.15
+  name "sassafras tree(9)"
+}
+BigSassafras {
+  translation -22.56 0 21.38
+  name "sassafras tree(1)"
+}
+BigSassafras {
+  translation -22.56 0 -8.94
+  name "sassafras tree(16)"
+}
+BigSassafras {
+  translation -13.32 0 21.38
+  name "sassafras tree(2)"
+}
+BigSassafras {
+  translation -13.32 0 -9.52
+  name "sassafras tree(17)"
+}
+BigSassafras {
+  translation -3.61 0 21.38
+  name "sassafras tree(3)"
+}
+BigSassafras {
+  translation -3.61 0 -9
+  name "sassafras tree(18)"
+}
+BigSassafras {
+  translation 23.73 0 21.38
+  name "sassafras tree(5)"
+}
+BigSassafras {
+  translation 23.73 0 -8.62
+  name "sassafras tree(20)"
+}
+BigSassafras {
+  translation 15.61 0 21.38
+  name "sassafras tree(15)"
+}
+BigSassafras {
+  translation 15.61 0 -8.24
+  name "sassafras tree(19)"
+}
+BigSassafras {
+  translation 31.56 0 21.38
+  name "sassafras tree(6)"
+}
+BigSassafras {
+  translation 31.56 0 -8.11
+  name "sassafras tree(21)"
+}
+DEF PIONEER_3AT Pioneer3at {
+  translation 6.90456 0.21 31.9204
+  rotation 0 1 0 -1.6171453071795865
+  controller "<extern>"
+  extensionSlot [
+    Gyro {
+    }
+    Compass {
+    }
+    SickLms291 {
+      translation -0.02 0.24 -0.206
+      rotation 0 0 1 -1.5707953071795862
+      resolution 360
+    }
+  ]
+}
